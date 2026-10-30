@@ -1,0 +1,8 @@
+streamlit
+opencv-python
+numpy
+pandas
+torch
+transformers
+Pillow
+supervision==0.25.1
