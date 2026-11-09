@@ -1,24 +1,53 @@
+# Python
 __pycache__/
 *.py[cod]
-.ipynb_checkpoints/
-.env
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
 .venv/
 venv/
+env/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+credentials.json
+token.json
+
+# IDE and OS
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
+
+# Model weights and checkpoints
 *.pt
 *.pth
 *.safetensors
 *.onnx
 *.engine
 checkpoint-*/
+checkpoints/
+weights/
+
+# Datasets and raw videos
 datasets/
 data/
-input_videos/
-evidence/
 *.mp4
 *.avi
 *.mov
+*.mkv
+
+# Generated outputs and evidence
 outputs/
 runs/
 results/
-*.log
+evidence/
+logs/
+temp/
